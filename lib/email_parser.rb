@@ -14,6 +14,6 @@ class EmailParser
   end
   
   def parse
-    @@parse.flaten.uniq
+    @@parse.flatten.uniq
   end
 end
