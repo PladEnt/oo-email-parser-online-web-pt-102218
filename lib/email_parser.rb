@@ -8,9 +8,9 @@ class EmailParser
   
   def initialize(addresses)
     @address = addresses
-    addresses.each do |address|
-      @@parse << address.join
-    end
+    
+    @@parse << address.join
+    
   end
   
   def parse
