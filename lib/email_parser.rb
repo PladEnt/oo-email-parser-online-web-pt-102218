@@ -9,11 +9,10 @@ class EmailParser
   def initialize(addresses)
     @address = addresses
     
-    @@parse << addresses.split(", ")
-    
   end
   
   def parse
+    
     @@parse.flatten.uniq
   end
 end
