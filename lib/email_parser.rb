@@ -13,6 +13,6 @@ class EmailParser
   
   def parse
     
-    @@parse.flatten.uniq
+    address
   end
 end
