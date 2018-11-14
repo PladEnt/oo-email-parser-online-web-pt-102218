@@ -6,9 +6,10 @@ class EmailParser
   attr_accessor :address
   @@parse = []
   
-  def initialize(address)
-    @address = address
-    @@parse << address
+  def initialize(addresses)
+    @address = addresses
+    addresses.each do |address|
+    @@parse << address.join
   end
   
   def parse
