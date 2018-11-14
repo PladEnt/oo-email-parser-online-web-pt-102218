@@ -8,9 +8,9 @@ class EmailParser
   
   def initialize(addresses)
     @address = addresses
-    addresses.collect do |address|
-      @@parse << address.split(", ")
-    end
+    
+    @@parse << addresses.split(", ")
+    
   end
   
   def parse
