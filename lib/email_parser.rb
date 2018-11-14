@@ -10,4 +10,8 @@ class EmailParser
     @address = address
     @@parse << self
   end
+  
+  def parse
+    
+  end
 end
