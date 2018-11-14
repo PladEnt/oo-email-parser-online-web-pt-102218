@@ -10,6 +10,7 @@ class EmailParser
     @address = addresses
     addresses.each do |address|
     @@parse << address.join
+    end
   end
   
   def parse
